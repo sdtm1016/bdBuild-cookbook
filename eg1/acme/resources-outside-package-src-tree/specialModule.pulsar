@@ -1,0 +1,6 @@
+define(function(){
+    value = "replaceMe";
+    return {
+        getValue:function(){ return value; }
+    };
+});

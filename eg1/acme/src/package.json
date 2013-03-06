@@ -1,0 +1,13 @@
+{
+    "name": "acme",
+    "version":"0.1dev",
+    "description": "A build example that shows how to hook a custom transform into the builder.",
+    "licenses": [        {
+            "type": "BSD",
+            "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13"
+        }
+    ],
+    "keywords": ["JavaScript", "Backdraft", "AMD", "Builder", "Dojo", "Toolkit"],
+    "homepage": "http://bdframework.org/",
+    "dojoBuild": "../acme.profile.js"
+}
