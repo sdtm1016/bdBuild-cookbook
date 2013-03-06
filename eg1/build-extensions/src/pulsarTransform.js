@@ -7,14 +7,6 @@ define(["build/buildControl"], function(bc) {
         // change some text...
         resource.text = resource.text.replace(/replaceMe/, "here is a string value set during the build");
 
-        // now, twiddle the resource to make it look like it came from the acme package tree all along
-        if(!acmePackageInfo){
-            acmePackageInfo = bc.getSrcModuleInfo("acme/__FAKE_MODULE__");
-            // acme path is the fully resolved acme directory; we deduce it from the source location of a fake module
-            // this way there are never hard paths encoded in our transform
-            acmePath = acmePackageInfo.url.match(/(.+)\/src\/__FAKE_MODULE__/)[1]
-        }
-
         // figure out the intended AMD module identifier...
         mid = resource.dest.match(/.+\/__PULSAR_MARKER__\/(.+)\.pulsar/)[1];
 
